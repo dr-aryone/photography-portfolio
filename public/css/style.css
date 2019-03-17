@@ -1,0 +1,102 @@
+html {
+    width: 100%;
+    height: 100vh;
+}
+
+nav {
+    position: fixed;
+    height: 3rem;
+    border: 1px solid rgb(135, 206, 125);
+    display: flex;
+    align-items: center;
+}
+
+#menu {
+    font-size: 1rem;
+    margin-left: 2rem;
+    
+}
+
+ul {
+    visibility: hidden;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 0 2rem;
+}
+
+#nav-display {
+    visibility: visible;
+}
+
+
+/* home hero styles */ 
+
+.home-hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.hero-left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me {
+    height: 70%;
+    width: 70%;
+    border: 1px solid lightskyblue;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-textbox {
+    width: 70%;
+    height: 70%;
+    border: 1px solid rgb(219, 219, 86);
+    
+}
+
+.about-me-textbox p{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.about-me-textbox h3 {
+    text-align: center;
+    margin: auto;
+    padding-top: 2rem;
+    font-size: 2.5rem;
+}
+
+.hero-right {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container-slick {
+  height: 30vw;
+  width: 45vw;
+  overflow: contain;
+  border: 1px solid red;
+}
+
+.slick-image img {
+  width: auto;
+  height: 30vw;
+  overflow: contain;
+  margin: auto;
+}
