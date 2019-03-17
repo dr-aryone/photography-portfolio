@@ -1,14 +1,20 @@
 html {
     width: 100%;
     height: 100vh;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
 }
 
 nav {
-    position: fixed;
+    
     height: 3rem;
     border: 1px solid rgb(135, 206, 125);
     display: flex;
     align-items: center;
+}
+h3 {
+    font-size: 2.5rem;
+    font-weight: 800;
 }
 
 #menu {
@@ -18,7 +24,6 @@ nav {
 }
 
 ul {
-    visibility: hidden;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -26,11 +31,14 @@ ul {
 
 li {
     margin: 0 2rem;
+    color: white;
+    padding-bottom: 2rem;
 }
 
-#nav-display {
-    visibility: visible;
+li:hover {
+    cursor: pointer;
 }
+
 
 
 /* home hero styles */ 
@@ -44,25 +52,25 @@ li {
 }
 
 .hero-left {
-    width: 40%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .about-me {
-    height: 70%;
-    width: 70%;
-    border: 1px solid lightskyblue;;
+    height: 60%;
+    width: 60%;
+    border: 10px solid lightskyblue;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .about-me-textbox {
-    width: 70%;
-    height: 70%;
-    border: 1px solid rgb(219, 219, 86);
+    width: 90%;
+    height: 90%;
+    background-color:rgb(148, 148, 148)
     
 }
 
@@ -71,27 +79,51 @@ li {
     text-align: center;
     margin: auto;
     padding: 1rem;
+    color: rgb(0, 0, 0);
+    line-height: 2rem;
 }
 
 .about-me-textbox h3 {
     text-align: center;
     margin: auto;
     padding-top: 2rem;
-    font-size: 2.5rem;
+    color: white;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: lightskyblue;
+    border: 1px solid black;
+    display: block;
+    margin: auto;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 .hero-right {
-    width: 60%;
+    width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: rgb(39, 39, 39);
+}
+
+.hero-right h3 {
+    padding-bottom: 2rem;
+    color: white;
 }
 
 .image-container-slick {
   height: 30vw;
   width: 45vw;
   overflow: contain;
-  border: 1px solid red;
 }
 
 .slick-image img {
