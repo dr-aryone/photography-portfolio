@@ -36,21 +36,25 @@ $('#explore-text').load('/edinburgh-text');
   $('#explore-edinburgh').click((e) => {
     e.preventDefault();
     $("#explore-text").load("/edinburgh-text");
+    $("#explore-img").attr('src', "/images/Edinburgh/DSC_0064.jpg");
   });
 
   $('#explore-france').click((e) => {
     e.preventDefault();
     $("#explore-text").load("/france-text");
+    $("#explore-img").attr("src", "/images/France/DSC_0113.jpg");
   });
 
 $('#explore-vietnam').click((e) => {
   e.preventDefault();
   $("#explore-text").load("/vietnam-text");
+  $("#explore-img").attr("src", "/images/Vietnam/000005.jpg");
 });
 
   $("#explore-scotland").click(e => {
     e.preventDefault();
     $("#explore-text").load("/scotland-text");
+    $("#explore-img").attr("src", "/images/Scotland/DSC_0023.jpg");
   });
 
 
