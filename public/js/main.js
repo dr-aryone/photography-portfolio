@@ -29,10 +29,32 @@ $(".image-container-slick").slick({
 });
 
 
+$(document).ready(function() {
+
+$('#explore-text').load('/edinburgh-text');
+
+  $('#explore-edinburgh').click((e) => {
+    e.preventDefault();
+    $("#explore-text").load("/edinburgh-text");
+  });
+
+  $('#explore-france').click((e) => {
+    e.preventDefault();
+    $("#explore-text").load("/france-text");
+  });
+
+$('#explore-vietnam').click((e) => {
+  e.preventDefault();
+  $("#explore-text").load("/vietnam-text");
+});
+
+  $("#explore-scotland").click(e => {
+    e.preventDefault();
+    $("#explore-text").load("/scotland-text");
+  });
 
 
-
-
+});
 
 
 
