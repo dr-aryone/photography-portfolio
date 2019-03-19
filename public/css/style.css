@@ -57,6 +57,10 @@ li:hover {
     cursor: pointer;
 }
 
+.fa-home {
+    position: fixed;
+    padding: 1rem;
+}
 
 
 /* home hero styles */ 
@@ -231,7 +235,6 @@ button:hover {
 }
 
 #explore-image {
-    border: 1px solid black;
     width: 500px;
     height: 330px;
 }
@@ -239,4 +242,37 @@ button:hover {
 #explore-img {
     width: 500px;
     height: 330px;
+}
+
+/* gallery page styles */
+
+.gallery-h1 {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.gallery span {
+    position: relative;
+    left: 20rem;
+    margin-top: 0.5rem;
+}
+
+.gallery-img-container-lg {
+    border: 1px solid black;
+    width: 900px;
+    height: 600px;
 }

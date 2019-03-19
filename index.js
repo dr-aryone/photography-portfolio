@@ -20,6 +20,22 @@ app.get('/explore', (req, res) => {
   res.render('explore');
 })
 
+app.get('/edinburgh', (req,res) => {
+  res.render('edinburgh');
+})
+
+app.get('/france', (req, res) => {
+  res.render('france');
+})
+
+app.get('/vietnam', (req, res) => {
+  res.render('vietnam');
+})
+
+app.get('/scotland', (req, res) => {
+  res.render('scotland');
+})
+
 app.get('/edinburgh-text', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'edinburgh-text.html'));
 })
