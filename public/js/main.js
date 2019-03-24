@@ -5,7 +5,7 @@ const france = document.getElementById('france');
 const vietnam = document.getElementById("vietnam");
 const scotland = document.getElementById("scotland");
 const slickImage = document.querySelectorAll('.slideshow-img');
-
+const quote = document.getElementsByClassName('quote');
 
 
 $(document).ready(function () {
@@ -60,21 +60,25 @@ $('#explore-vietnam').click((e) => {
   $("#edinburgh").click(e => {
     e.preventDefault();
     $(".hero-right").load("/edinburgh");
+    $(".quote").attr('id', 'hidden');
   });
 
   $("#france").click(e => {
     e.preventDefault();
     $(".hero-right").load("/france");
+    $(".quote").attr("id", "hidden");
   });
 
   $("#vietnam").click(e => {
     e.preventDefault();
     $(".hero-right").load("/vietnam");
+    $(".quote").attr("id", "hidden");
   });
 
   $("#scotland").click(e => {
     e.preventDefault();
     $(".hero-right").load("/scotland");
+    $(".quote").attr("id", "hidden");
   });
 
 });
@@ -130,9 +134,31 @@ function displayScotlandImages(e) {
 }
 
 
+const robertAdamsQuote =
+  "No place is boring if you've had a good nights sleep and a pocket full of unexposed film - Robert Adams";
+const andyWarholQuote = "The best thing about a picture is that it never changes, even when the people in it do - Andy Warhol";
+const gillesPeressQuote = "I don’t trust words.I trust pictures - Gilles Peress"
+const jeanLucGodardQuote = "Photography is truth - Jean Luc Godard"
+const elliottErwittQuote = "The whole point of taking pictures is so that you don’t have to explain things with words - Elliott Erwitt"
 
+window.addEventListener('load', displayQuote);
 
-
+function displayQuote() {
+  let choice = Math.floor(Math.random() * 5) + 1;
+  console.log(choice);
+// this needs debugged - why is it not working?
+  if (choice == 1) {
+    quote.textContent = robertAdamsQuote;
+  } else if(choice == 2) {
+    quote.textContent = andyWarholQuote; 
+  } else if (choice == 3) {
+    quote.textContent = gillesPeressQuote;
+  } else if (choice == 4) {
+    quote.textContent = jeanLucGodardQuote;
+  } else {
+    quote.textContent = elliottErwittQuote;
+  }
+}
 
 
 

@@ -14,6 +14,10 @@ html {
     top: 2rem;
 }
 
+#hidden {
+    display: none;
+}
+
 .menu h1 {
     margin-bottom: 0.5rem;
 }
@@ -73,6 +77,15 @@ li:hover {
 
 
 /* home hero styles */ 
+
+.quote {
+    position: fixed;
+    top: 25rem;
+    left: 10rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 60rem;
+}
 
 .home-hero {
     width: 100%;
