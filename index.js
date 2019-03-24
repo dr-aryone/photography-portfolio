@@ -20,22 +20,6 @@ app.get('/explore', (req, res) => {
   res.render('explore');
 })
 
-app.get('/edinburgh', (req,res) => {
-  res.render('edinburgh');
-})
-
-app.get('/france', (req, res) => {
-  res.render('france');
-})
-
-app.get('/vietnam', (req, res) => {
-  res.render('vietnam');
-})
-
-app.get('/scotland', (req, res) => {
-  res.render('scotland');
-})
-
 app.get('/edinburgh-text', (req, res) => {
   res.sendFile(path.join(__dirname, 'views', 'edinburgh-text.html'));
 })
@@ -50,6 +34,22 @@ app.get("/vietnam-text", (req, res) => {
 
 app.get("/scotland-text", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "scotland-text.html"));
+});
+
+app.get("/edinburgh", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "edinburgh.html"));
+});
+
+app.get("/france", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "france.html"));
+});
+
+app.get("/vietnam", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "vietnam.html"));
+});
+
+app.get("/scotland", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "scotland.html"));
 });
 
 const PORT = process.env.PORT || 5000

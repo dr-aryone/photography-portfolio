@@ -15,14 +15,14 @@ $(".image-container-slick").slick({
   speed: 500,
   fade: true,
   cssEase: "linear",
-  accessibility: false,
+  accessibility: true,
   autoplay: true,
   autoplaySpeed: 2000,
   draggable: false,
   pauseOnFocus: false,
   pauseOnHover: true,
   swipe: true,
-  arrows: true,
+  arrows: false,
   touchMove: false,
 });
 
@@ -57,6 +57,25 @@ $('#explore-vietnam').click((e) => {
     $("#explore-img").attr("src", "/images/Scotland/DSC_0023.jpg");
   });
 
+  $("#edinburgh").click(e => {
+    e.preventDefault();
+    $(".hero-right").load("/edinburgh");
+  });
+
+  $("#france").click(e => {
+    e.preventDefault();
+    $(".hero-right").load("/france");
+  });
+
+  $("#vietnam").click(e => {
+    e.preventDefault();
+    $(".hero-right").load("/vietnam");
+  });
+
+  $("#scotland").click(e => {
+    e.preventDefault();
+    $(".hero-right").load("/scotland");
+  });
 
 });
 
@@ -70,15 +89,7 @@ scotland.addEventListener("click", displayScotlandImages);
 function displayFranceImages(e) {
   e.preventDefault();
 
-  const francePics = [
-    "/images/France/DSCF2130.jpg",
-    "/images/France/DSCF2139.jpg",
-    "/images/France/DSC_0113.jpg",
-    "/images/France/DSC_0147.jpg",
-    "/images/France/DSC_0321.jpg",
-    "/images/France/DSC_0372.jpg",
-    "/images/France/DSC_0404.jpg"
-  ]
+  const francePics = "/images/France/"
   
   for (var i=0; i<slickImage.length; i++) {
     slickImage[i].src = francePics[i];
@@ -90,16 +101,8 @@ function displayEdinburghImages(e) {
   e.preventDefault();
 
 
-  const edinburghPics = [
-    "/images/Edinburgh/DSCF1240.jpg",
-    "/images/Edinburgh/DSC_0010.jpg",
-    "/images/Edinburgh/DSC_0016-2.jpg",
-    "/images/Edinburgh/DSC_0057.jpg",
-    "/images/Edinburgh/DSC_0064.jpg",
-    "/images/Edinburgh/DSC_0078.jpg",
-    "/images/Edinburgh/DSC_0081.jpg",
+  const edinburghPics = "/images/Edinburgh/";
 
-  ];
 
   for (var i=0; i<slickImage.length; i++){
     slickImage[i].src = edinburghPics[i];
@@ -109,15 +112,7 @@ function displayEdinburghImages(e) {
 function displayVietnamImages(e) {
   e.preventDefault();
 
-  const vietnamPics = [
-    "/images/Vietnam/000003.jpg",
-    "/images/Vietnam/000004.jpg",
-    "/images/Vietnam/000005.jpg",
-    "/images/Vietnam/000025.jpg",
-    "/images/Vietnam/000007.jpg",
-    "/images/Vietnam/000018-2.jpg",
-    "/images/Vietnam/000023.jpg"
-  ];
+  const vietnamPics = "/images/Vietnam/";
 
   for (var i = 0; i < slickImage.length; i++) {
     slickImage[i].src = vietnamPics[i];
@@ -127,15 +122,7 @@ function displayVietnamImages(e) {
 function displayScotlandImages(e) {
   e.preventDefault();
 
-  const scotlandPics = [
-    "/images/Scotland/DSC_0005.jpg",
-    "/images/Scotland/DSC_0023.jpg",
-    "/images/Scotland/DSC_0061.jpg",
-    "/images/Scotland/DSC_0062.jpg",
-    "/images/Scotland/DSC_0071.jpg",
-    "/images/Scotland/DSC_0087.jpg",
-    "/images/Scotland/DSC_0199.jpg"
-  ];
+  const scotlandPics = "/images/Scotland/";
 
   for (var i = 0; i < slickImage.length; i++) {
     slickImage[i].src = scotlandPics[i];

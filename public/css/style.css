@@ -1,37 +1,45 @@
 html {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
 }
 
-nav {
-    
-    height: 3rem;
-    border: 1px solid rgb(135, 206, 125);
+.menu {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+    left: 2rem;
+    top: 2rem;
+}
+
+.menu h1 {
+    margin-bottom: 0.5rem;
+}
+
+.menu span {
+    padding-top: 0.25rem;
+}
+
+.menu span:hover {
+    cursor: pointer;
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: 800;
     color: rgb(39, 39, 39);
 }
 
-a {
+a, a:hover {
     text-decoration: none;
     color: inherit;
 }
 
 
 h3 {
-    font-size: 2.5rem;
-    font-weight: 800;
-}
-
-h4 {
-    font-size: 2rem;
+    font-size: 1.25rem;
     font-weight: 800;
 }
 
@@ -57,9 +65,10 @@ li:hover {
     cursor: pointer;
 }
 
-.fa-home {
+#home-button {
     position: fixed;
     padding: 1rem;
+    font-size: 1.5rem;
 }
 
 
@@ -67,41 +76,31 @@ li:hover {
 
 .home-hero {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #FFFFFF;
     display: flex;
     flex-direction: row;
 }
 
 .hero-left {
-    width: 50%;
+    width: 25%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    padding: 1rem;
 }
 
 .hero-left h1 { 
-
     line-height: 5.5rem;
-    text-align: center;
-}
-
-.hero-left span {
-    margin-top: 3rem;
-    font-size: 1.5rem;
-    animation: glow 1.5s linear 0s infinite alternate;
-}
-
-.hero-left a {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    padding: 1rem 2rem;
     
 }
 
-.hero-left span:hover {
-    text-decoration: underline;
+.hero-left span {
+    line-height: 1.25rem;
+}
+
+.hero-left a {
+    
+    
 }
 
 @keyframes glow {
@@ -158,12 +157,12 @@ button:hover {
 }
 
 .hero-right {
-    width: 50%;
+    width: 75%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(39, 39, 39);
+    padding-top: 5rem;
 }
 
 .hero-right h3 {
@@ -184,6 +183,19 @@ button:hover {
   margin: auto;
 }
 
+.img-container {
+    width: 750px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
 
 /* explore page styles */ 
 
@@ -242,37 +254,4 @@ button:hover {
 #explore-img {
     width: 500px;
     height: 330px;
-}
-
-/* gallery page styles */
-
-.gallery-h1 {
-    text-align: center;
-    margin-top: 3rem;
-}
-
-.gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.gallery-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 4rem;
-}
-
-.gallery span {
-    position: relative;
-    left: 20rem;
-    margin-top: 0.5rem;
-}
-
-.gallery-img-container-lg {
-    border: 1px solid black;
-    width: 900px;
-    height: 600px;
 }
