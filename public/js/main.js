@@ -8,6 +8,8 @@ const slickImage = document.querySelectorAll('.slideshow-img');
 const quote = document.querySelector('.quote');
 const collections = document.getElementById('collections');
 const collectionsContainer = document.querySelector('.collections-container');
+const burgerMenu = document.getElementById('burger-menu');
+const mobileMenuContent = document.querySelector('.mobile-menu-content');
 
 $(document).ready(function () {
 $(".image-container-slick").slick({
@@ -32,31 +34,31 @@ $(".image-container-slick").slick({
 
 $(document).ready(function() {
 
-  $("#edinburgh").click(e => {
+  $(".edinburgh").click(e => {
     e.preventDefault();
     $(".home-hero").load("/edinburgh");
     $(".quote").attr('id', 'hidden');
   });
 
-  $("#france").click(e => {
+  $(".france").click(e => {
     e.preventDefault();
     $(".home-hero").load("/france");
     $(".quote").attr("id", "hidden");
   });
 
-  $("#vietnam").click(e => {
+  $(".vietnam").click(e => {
     e.preventDefault();
     $(".home-hero").load("/vietnam");
     $(".quote").attr("id", "hidden");
   });
 
-  $("#scotland").click(e => {
+  $(".scotland").click(e => {
     e.preventDefault();
     $(".home-hero").load("/scotland");
     $(".quote").attr("id", "hidden");
   });
 
-  $("#about").click(e => {
+  $(".about").click(e => {
     e.preventDefault();
     $(".home-hero").load("/about");
     $(".quote").attr("id", "hidden");
@@ -128,89 +130,15 @@ function showCollections() {
 };
 
 
+burgerMenu.addEventListener('click', displayMobileMenu);
+
+function displayMobileMenu() {
+  if (mobileMenuContent.style.height == '10rem') {
+    mobileMenuContent.style.height = 0;
+  } else {
+    mobileMenuContent.style.height = '10rem';
+  }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// $(document).ready(function() {
-
-// $('#js-content').load('/sample');
-
-// $('#button1').click((e) => {
-//     e.preventDefault();
-//     $('#js-content').load('/text');
-// });
-
-// $('#button2').click((e) => {
-//     e.preventDefault();
-//     $('#js-content').load('/text2');
-// });
-
-// $('#button3').click((e) => {
-//     e.preventDefault();
-//     $('#js-content').load('/text3');
-// });
-
-
-// })
-
-// const images = document.querySelectorAll('.myImage');
-// const button1 = document.getElementById("button1");
-// const button2 = document.getElementById("button2");
-// const srcFrance = [
-//   "/images/Gallery/1.jpg",
-//   "/images/Gallery/2.jpg",
-//   "/images/Gallery/3.jpg",
-//   "/images/Gallery/4.jpg"];
-
-
-// const srcEdinburgh = [
-//   "/images/resources/images/Edinburgh/DSC_0010.jpg",
-//   "/images/resources/images/Edinburgh/DSC_0016-2.jpg",
-//   "/images/resources/images/Edinburgh/DSC_0057.jpg"];  
-
-// button1.addEventListener('click', updateImagesFrance);
-// button2.addEventListener("click", updateImagesEdinburgh);
-
-// function updateImagesFrance(e) {
-//     e.preventDefault();
-
-// for (var i =0; i < images.length; i++) {
-//     images[i].src = srcFrance[i];
-// }
-    
-
-// }
-
-// function updateImagesEdinburgh(e) {
-//     e.preventDefault();
-//     for (var i = 0; i < images.length; i++) {
-//         images[i].src = srcEdinburgh[i];
-//     }
-
-
-// }

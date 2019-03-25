@@ -78,6 +78,46 @@ li:hover {
 }
 
 
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+    font-weight: bold;
+}
+
+.mobile-menu-content {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    transition: height 0.35s;
+}
+
+.mobile-menu-content span {
+    margin: 0.5rem 0;
+}
+
+i {
+    margin-bottom: 1rem;
+    position: ;
+}
+
+@media only screen and (max-width: 980px) {
+    .mobile-menu {
+        display: flex;
+    }
+
+    .menu {
+        display: none;
+    }
+}
+
 /* home page styles */ 
 
 .quote {
