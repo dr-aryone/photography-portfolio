@@ -38,30 +38,35 @@ $(document).ready(function() {
     e.preventDefault();
     $(".home-hero").load("/edinburgh");
     $(".quote").attr('id', 'hidden');
+    mobileMenuContent.style.height = 0;
   });
 
   $(".france").click(e => {
     e.preventDefault();
     $(".home-hero").load("/france");
     $(".quote").attr("id", "hidden");
+    mobileMenuContent.style.height = 0;
   });
 
   $(".vietnam").click(e => {
     e.preventDefault();
     $(".home-hero").load("/vietnam");
     $(".quote").attr("id", "hidden");
+    mobileMenuContent.style.height = 0;
   });
 
   $(".scotland").click(e => {
     e.preventDefault();
     $(".home-hero").load("/scotland");
     $(".quote").attr("id", "hidden");
+    mobileMenuContent.style.height = 0;
   });
 
   $(".about").click(e => {
     e.preventDefault();
     $(".home-hero").load("/about");
     $(".quote").attr("id", "hidden");
+    mobileMenuContent.style.height = 0;
   });
 
 });
@@ -82,7 +87,6 @@ window.addEventListener('load', displayQuote);
 
 function displayQuote() {
   let choice = Math.floor(Math.random() * 6) + 1;
-  console.log(choice);
 
   switch(choice) {
     case 1: 
@@ -123,7 +127,6 @@ function showCollections() {
 
   if (collectionsContainer.style.height == '5rem') {
     collectionsContainer.style.height = 0;
-    console.log('hello');
   } else {
     collectionsContainer.style.height = '5rem';
   }

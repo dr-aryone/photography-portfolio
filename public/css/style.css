@@ -81,12 +81,13 @@ li:hover {
 .mobile-menu {
     display: none;
     position: fixed;
-    top: 2rem;
-    right: 2rem;
+    /* top: 2rem; */
+    /* right: 2rem; */
     width: 100%;
     flex-direction: column;
     align-items: flex-end;
     font-weight: bold;
+    background-color: rgb(235, 235, 235);
 }
 
 .mobile-menu-content {
@@ -97,6 +98,10 @@ li:hover {
     justify-content: space-between;
     align-items: flex-end;
     transition: height 0.35s;
+    background-color: rgb(235, 235, 235);
+    padding-right: 1rem;
+    /* padding-top: 1rem; */
+    width: 100%;
 }
 
 .mobile-menu-content span {
@@ -105,7 +110,10 @@ li:hover {
 
 i {
     margin-bottom: 1rem;
-    position: ;
+    padding-right: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 980px) {
@@ -170,8 +178,11 @@ i {
     }
 }
 
-@media only screen and (max-width: 1000px) {
-
+@media only screen and (max-width: 730px) {
+    .img-container {
+        width: 90vw;
+        height: 60vw;
+    }
 }
 
 
@@ -195,4 +206,19 @@ i {
     max-width: 100%;
     max-height: 100%;
 
+}
+
+#instagram {
+    margin-top: 1rem;
+}
+
+@media only screen and (max-width: 900px) {
+    #about-text {
+        width: 90vw;
+    }
+
+    #img-container-about {
+        width: 90vw;
+        height: 60vw;
+    }
 }
