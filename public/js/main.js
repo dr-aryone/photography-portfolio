@@ -43,6 +43,13 @@ $(document).ready(function() {
     mobileMenuContent.style.height = 0;
   });
 
+  $(".summer").click(e => {
+    e.preventDefault();
+    $(".home-hero").load("/summer");
+    $(".quote").attr("id", "hidden");
+    mobileMenuContent.style.height = 0;
+  });
+
   $(".about").click(e => {
     e.preventDefault();
     $(".home-hero").load("/about");
@@ -106,10 +113,10 @@ collections.addEventListener('click', showCollections);
 
 function showCollections() {
 
-  if (collectionsContainer.style.height == '5rem') {
+  if (collectionsContainer.style.height == '7rem') {
     collectionsContainer.style.height = 0;
   } else {
-    collectionsContainer.style.height = '5rem';
+    collectionsContainer.style.height = '7rem';
   }
 };
 
@@ -117,10 +124,10 @@ function showCollections() {
 burgerMenu.addEventListener('click', displayMobileMenu);
 
 function displayMobileMenu() {
-  if (mobileMenuContent.style.height == '10rem') {
+  if (mobileMenuContent.style.height == '12rem') {
     mobileMenuContent.style.height = 0;
   } else {
-    mobileMenuContent.style.height = '10rem';
+    mobileMenuContent.style.height = '12rem';
   }
 }
 
