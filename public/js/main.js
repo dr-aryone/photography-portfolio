@@ -15,9 +15,9 @@ const mobileMenuContent = document.querySelector('.mobile-menu-content');
 
 $(document).ready(function() {
 
-  $(".edinburgh").click(e => {
+  $(".first-of-the-roll").click(e => {
     e.preventDefault();
-    $(".home-hero").load("/edinburgh");
+    $(".home-hero").load("/first_of_the_roll");
     $(".quote").attr('id', 'hidden');
     mobileMenuContent.style.height = 0;
   });

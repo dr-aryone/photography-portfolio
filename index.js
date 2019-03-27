@@ -36,8 +36,8 @@ app.get("/scotland-text", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "scotland-text.html"));
 });
 
-app.get("/edinburgh", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "edinburgh.html"));
+app.get("/first_of_the_roll", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "first_of_the_roll.html"));
 });
 
 app.get("/france", (req, res) => {
