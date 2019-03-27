@@ -40,8 +40,8 @@ app.get("/first_of_the_roll", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "first_of_the_roll.html"));
 });
 
-app.get("/france", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "france.html"));
+app.get("/carbine", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "carbine.html"));
 });
 
 app.get("/vietnam", (req, res) => {

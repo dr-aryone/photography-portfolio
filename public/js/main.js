@@ -22,9 +22,9 @@ $(document).ready(function() {
     mobileMenuContent.style.height = 0;
   });
 
-  $(".france").click(e => {
+  $(".carbine").click(e => {
     e.preventDefault();
-    $(".home-hero").load("/france");
+    $(".home-hero").load("/carbine");
     $(".quote").attr("id", "hidden");
     mobileMenuContent.style.height = 0;
   });
