@@ -29,9 +29,9 @@ $(document).ready(function() {
     mobileMenuContent.style.height = 0;
   });
 
-  $(".vietnam").click(e => {
+  $(".people").click(e => {
     e.preventDefault();
-    $(".home-hero").load("/vietnam");
+    $(".home-hero").load("/people");
     $(".quote").attr("id", "hidden");
     mobileMenuContent.style.height = 0;
   });
