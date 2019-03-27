@@ -127,10 +127,10 @@ collections.addEventListener('click', showCollections);
 
 function showCollections() {
 
-  if (collectionsContainer.style.height == '8rem') {
+  if (collectionsContainer.style.height == '9rem') {
     collectionsContainer.style.height = 0;
   } else {
-    collectionsContainer.style.height = '8rem';
+    collectionsContainer.style.height = '9rem';
   }
 };
 
@@ -138,10 +138,10 @@ function showCollections() {
 burgerMenu.addEventListener('click', displayMobileMenu);
 
 function displayMobileMenu() {
-  if (mobileMenuContent.style.height == '14rem') {
+  if (mobileMenuContent.style.height == '16rem') {
     mobileMenuContent.style.height = 0;
   } else {
-    mobileMenuContent.style.height = '14rem';
+    mobileMenuContent.style.height = '16rem';
   }
 }
 
