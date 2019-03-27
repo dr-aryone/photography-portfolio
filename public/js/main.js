@@ -11,25 +11,6 @@ const collectionsContainer = document.querySelector('.collections-container');
 const burgerMenu = document.getElementById('burger-menu');
 const mobileMenuContent = document.querySelector('.mobile-menu-content');
 
-$(document).ready(function () {
-$(".image-container-slick").slick({
-  dots: true,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: "linear",
-  accessibility: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
-  draggable: false,
-  pauseOnFocus: false,
-  pauseOnHover: true,
-  swipe: true,
-  arrows: false,
-  touchMove: false,
-});
-
-});
 
 
 $(document).ready(function() {
