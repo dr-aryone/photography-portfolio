@@ -56,6 +56,15 @@ app.get("/summer", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "summer.html"));
 });
 
+app.get("/travel", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "travel.html"));
+});
+
+app.get("/winter", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "winter.html"));
+});
+
+
 app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "about.html"));
 });
