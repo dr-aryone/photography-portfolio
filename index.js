@@ -64,6 +64,9 @@ app.get("/winter", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "winter.html"));
 });
 
+app.get("/misc", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "misc.html"));
+});
 
 app.get("/about", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "about.html"));
