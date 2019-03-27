@@ -48,8 +48,8 @@ app.get("/vietnam", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "vietnam.html"));
 });
 
-app.get("/scotland", (req, res) => {
-  res.sendFile(path.join(__dirname, "views", "scotland.html"));
+app.get("/black_and_white", (req, res) => {
+  res.sendFile(path.join(__dirname, "views", "black_and_white.html"));
 });
 
 app.get("/about", (req, res) => {

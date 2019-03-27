@@ -36,9 +36,9 @@ $(document).ready(function() {
     mobileMenuContent.style.height = 0;
   });
 
-  $(".scotland").click(e => {
+  $(".black-and-white").click(e => {
     e.preventDefault();
-    $(".home-hero").load("/scotland");
+    $(".home-hero").load("/black_and_white");
     $(".quote").attr("id", "hidden");
     mobileMenuContent.style.height = 0;
   });
