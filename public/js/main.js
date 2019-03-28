@@ -10,8 +10,16 @@ const collections = document.getElementById('collections');
 const collectionsContainer = document.querySelector('.collections-container');
 const burgerMenu = document.getElementById('burger-menu');
 const mobileMenuContent = document.querySelector('.mobile-menu-content');
+const scroll = document.querySelectorAll('scroll');
 
-
+// Scroll to top of page on menu item click
+$('.scroll').on('click', function () {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: 'smooth'
+  });
+})
 
 $(document).ready(function() {
 
